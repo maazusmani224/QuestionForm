@@ -39,21 +39,21 @@
 					onsubmit='return validateForm()'>
 					<div class="form-group">
 						<label>Name</label><input class="form-control" type="text"
-							name="name" required>
+							name="name" id="name" required>
 					</div>
 					<div class="form-group">
 						<label>E-mail</label><input class="form-control" type="email"
-							name="email" required>
+							name="email" id="email" required>
 					</div>
 					<div class="form-group">
 						<label>Question Type:</label>
 						<div class="form-check">
-							<input class="form-check-input" type="radio" id="formCheck-1"
-								name="questype" value="mcq" required><label
+							<input class="form-check-input" type="radio" id="mcq"
+								name="questype" value="mcq" id="questype" required><label
 								class="form-check-label" for="formCheck-1">MCQ</label>
 						</div>
 						<div class="form-check">
-							<input class="form-check-input" type="radio" id="formCheck-2"
+							<input class="form-check-input" type="radio" id="tf"
 								name="questype" value="tf" required><label
 								class="form-check-label" for="formCheck-2">True/False</label>
 						</div>
@@ -61,17 +61,17 @@
 					<div class="form-group">
 						<label>Question Difficulty:</label>
 						<div class="form-check">
-							<input class="form-check-input" type="radio" id="formCheck-3"
+							<input class="form-check-input" type="radio" id="easy"
 								name="quesdiff" value="easy" required><label
 								class="form-check-label" for="formCheck-3">Easy</label>
 						</div>
 						<div class="form-check">
-							<input class="form-check-input" type="radio" id="formCheck-4"
+							<input class="form-check-input" type="radio" id="medium"
 								name="quesdiff" value="medium" required><label
 								class="form-check-label" for="formCheck-4">Medium</label>
 						</div>
 						<div class="form-check">
-							<input class="form-check-input" type="radio" id="formCheck-5"
+							<input class="form-check-input" type="radio" id="hard"
 								name="quesdiff" value="hard" required><label
 								class="form-check-label" for="formCheck-5">Hard</label>
 						</div>

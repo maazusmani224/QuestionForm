@@ -6,129 +6,129 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Entity;
 @Entity
-@Table(name="questions", schema="public")
+@Table(name="Questions", schema="public")
 public class QuestionSub {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="Question_Id")
-	private int id;
+	private int Question_Id;
 	
-	@Column(name="Author_Name")
-	private String authname;
+	@Column(name="Author_Name", length=250)
+	private String Author_Name;
 	
-	@Column(name="Email")
-	private String email;
+	@Column(name="Email", length=250)
+	private String Email;
 	
-	@Column(name="Question_Type")
-	private String questype;
+	@Column(name="Question_Type",length=100)
+	private String Question_Type;
 	
-	@Column(name="Question_Difficulty")
-	private String quesdiff;
+	@Column(name="Question_Difficulty",length=20)
+	private String Question_Difficulty;
 	
-	@Column(name="Question_Text")
-	private String ques;
+	@Column(name="Question_Text",length=10000)
+	private String Question_Text;
 	
-	@Column(name="Option_a")
-	private String opta;
+	@Column(name="Option_a",length=5000)
+	private String Option_a;
 	
-	@Column(name="Option_b")
-	private String optb;
+	@Column(name="Option_b",length=5000)
+	private String Option_b;
 	
-	@Column(name="Option_c")
-	private String optc;
+	@Column(name="Option_c",length=5000)
+	private String Option_c;
 	
-	@Column(name="Option_d")
-	private String optd;
+	@Column(name="Option_d",length=5000)
+	private String Option_d;
 	
-	@Column(name="Correct_Answer")
-	private String corrans;
+	@Column(name="Correct_Answer",length=10)
+	private String Correct_Answer;
 
-	public int getId() {
-		return id;
+	public int getQuestion_Id() {
+		return Question_Id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void setQuestion_Id(int question_Id) {
+		Question_Id = question_Id;
 	}
 
-	public String getAuthname() {
-		return authname;
+	public String getAuthor_Name() {
+		return Author_Name;
 	}
 
-	public void setAuthname(String authname) {
-		this.authname = authname;
+	public void setAuthor_Name(String author_Name) {
+		Author_Name = author_Name;
 	}
 
 	public String getEmail() {
-		return email;
+		return Email;
 	}
 
 	public void setEmail(String email) {
-		this.email = email;
+		Email = email;
 	}
 
-	public String getQuestype() {
-		return questype;
+	public String getQuestion_Type() {
+		return Question_Type;
 	}
 
-	public void setQuestype(String questype) {
-		this.questype = questype;
+	public void setQuestion_Type(String question_Type) {
+		Question_Type = question_Type;
 	}
 
-	public String getQuesdiff() {
-		return quesdiff;
+	public String getQuestion_Difficulty() {
+		return Question_Difficulty;
 	}
 
-	public void setQuesdiff(String quesdiff) {
-		this.quesdiff = quesdiff;
+	public void setQuestion_Difficulty(String question_Difficulty) {
+		Question_Difficulty = question_Difficulty;
 	}
 
-	public String getQues() {
-		return ques;
+	public String getQuestion_Text() {
+		return Question_Text;
 	}
 
-	public void setQues(String ques) {
-		this.ques = ques;
+	public void setQuestion_Text(String question_Text) {
+		Question_Text = question_Text;
 	}
 
-	public String getOpta() {
-		return opta;
+	public String getOption_a() {
+		return Option_a;
 	}
 
-	public void setOpta(String opta) {
-		this.opta = opta;
+	public void setOption_a(String option_a) {
+		Option_a = option_a;
 	}
 
-	public String getOptb() {
-		return optb;
+	public String getOption_b() {
+		return Option_b;
 	}
 
-	public void setOptb(String optb) {
-		this.optb = optb;
+	public void setOption_b(String option_b) {
+		Option_b = option_b;
 	}
 
-	public String getOptc() {
-		return optc;
+	public String getOption_c() {
+		return Option_c;
 	}
 
-	public void setOptc(String optc) {
-		this.optc = optc;
+	public void setOption_c(String option_c) {
+		Option_c = option_c;
 	}
 
-	public String getOptd() {
-		return optd;
+	public String getOption_d() {
+		return Option_d;
 	}
 
-	public void setOptd(String optd) {
-		this.optd = optd;
+	public void setOption_d(String option_d) {
+		Option_d = option_d;
 	}
 
-	public String getCorrans() {
-		return corrans;
+	public String getCorrect_Answer() {
+		return Correct_Answer;
 	}
 
-	public void setCorrans(String corrans) {
-		this.corrans = corrans;
+	public void setCorrect_Answer(String correct_Answer) {
+		Correct_Answer = correct_Answer;
 	}
 	
 }

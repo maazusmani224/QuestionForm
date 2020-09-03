@@ -30,16 +30,16 @@ public class Submit extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		QuestionSub qs = new QuestionSub();
-		qs.setAuthname(request.getParameter("name"));
+		qs.setAuthor_Name(request.getParameter("name"));
 		qs.setEmail(request.getParameter("email"));
-		qs.setQuestype(request.getParameter("questype"));
-		qs.setQuesdiff(request.getParameter("quesdiff"));
-		qs.setQues(request.getParameter("ques"));
-		qs.setOpta(request.getParameter("opta"));
-		qs.setOptb(request.getParameter("optb"));
-		qs.setOptc(request.getParameter("optc"));
-		qs.setOptd(request.getParameter("optd"));
-		qs.setCorrans(request.getParameter("corrans"));
+		qs.setQuestion_Type(request.getParameter("questype"));
+		qs.setQuestion_Difficulty(request.getParameter("quesdiff"));
+		qs.setQuestion_Text(request.getParameter("ques"));
+		qs.setOption_a(request.getParameter("opta"));
+		qs.setOption_b(request.getParameter("optb"));
+		qs.setOption_c(request.getParameter("optc"));
+		qs.setOption_d(request.getParameter("optd"));
+		qs.setCorrect_Answer(request.getParameter("corrans"));
 		Configuration config = new Configuration().configure("hibernate.cfg.xml");
 		config.addAnnotatedClass(com.tcsion.QuestionSub.class);
 		ServiceRegistry servReg = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
